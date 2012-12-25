@@ -1,0 +1,48 @@
+@import "base";
+
+#block-views-agenda-kort-block {
+    background-color: $yellow;
+}
+#block-views-nieuws-kort-block {
+    background-color: $white;
+}
+
+#block-views-agenda-kort-block,
+#block-views-nieuws-kort-block {
+    padding: 0 20px;
+    height: 340px;
+    
+    a {
+        color: $black;
+        &:hover {
+            color: $dark-gray;
+        }
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    .views-field.views-field-field-datum {
+        display: inline;
+        font-weight: bold;
+        
+        div {
+            display: inline;
+        }
+    }
+    
+    .views-field.views-field-title {
+        display: inline;
+        font-weight: bold;
+        
+        &:before {
+            content: "|";
+        }
+    }
+    
+    div.views-row {
+      margin: rhythm(1) 0 0 0;
+    }
+}
+

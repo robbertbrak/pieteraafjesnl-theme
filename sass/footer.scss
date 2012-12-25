@@ -1,0 +1,40 @@
+@import "base";
+
+#footer {
+    background-color: $light-gray;
+    color: $dark-gray;
+    margin: 15px 0;
+    padding: 15px;
+    
+    .block, p {
+        margin: 0;
+    }
+    
+    #footer-sitemap {
+        margin: 0;
+        
+        a {
+            font-size: $base-font-size;
+        }
+        
+        li {
+            width: 165px;
+
+            .fs-root-link {
+                color: $black;            
+                font-weight: bold; 
+                
+                &:hover {
+                    color: $dark-gray;
+                }
+            }
+
+            .fs-no-children a {
+                color: $dark-gray;
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

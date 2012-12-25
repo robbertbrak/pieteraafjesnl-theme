@@ -1,0 +1,47 @@
+@import "base";
+
+#block-views-slideshow-block {
+/*
+    img {
+        display: none;
+    }
+    */
+    .views_slideshow_cycle_main {
+        height: 340px;
+    }
+
+    .views-field-title {
+        @include adjust-font-size-to( $h2-font-size );
+        margin-top: -50px;
+        padding-left: 15px;
+        a, a:hover {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+    
+    .views-slideshow-controls-bottom {
+        height: 20px;
+        position: relative;
+        top: -38px;
+        z-index: 5;
+        float: right;
+        margin-right: 40px;
+    }
+
+    .views-slideshow-pager-field-item {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background-color: $white;
+        cursor: pointer;
+        
+        &.active {
+            background-color: $yellow;
+        }
+        
+        a {
+            display: none;
+        }
+    }
+}
