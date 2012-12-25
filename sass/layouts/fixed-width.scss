@@ -13,7 +13,7 @@
 
 
 // We are going to create a 1020px wide, 6 column grid with 0px gutters between
-// columns (applied as 10px of left/right padding on each column).
+// columns (applied as 0px of left/right padding on each column).
 $zen-column-count:  6;
 $zen-gutter-width:  0px;
 $zen-grid-width:    1020px;
@@ -26,8 +26,7 @@ $zen-grid-width:    1020px;
 //   $box-sizing-polyfill-path: "/path/to/boxsizing.htc";
 // - Use the same CSS unit for grid width and gutter width (use px for both or
 //   use % for both, etc.) and set the box-sizing variable to content-box.
-     $zen-box-sizing: content-box;
-
+$zen-box-sizing: border-box;
 
 // You can generate more efficient CSS if you manually apply the
 // zen-grid-item-base mixin to all grid items from within a single ruleset.

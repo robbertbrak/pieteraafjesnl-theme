@@ -2,15 +2,28 @@
 
 #block-views-agenda-kort-block {
     background-color: $yellow;
+    height: 340px;
+    
+    .view-footer {
+        position: absolute;
+        top: 350px;
+        right: 20px;
+    }
 }
 #block-views-nieuws-kort-block {
     background-color: $white;
+    margin: 15px 0 0 0;
+    height: 325px;
+
+    .view-footer {
+        float: right;
+        margin: 20px 0 0 0;
+    }
 }
 
 #block-views-agenda-kort-block,
 #block-views-nieuws-kort-block {
     padding: 0 20px;
-    height: 340px;
     
     a {
         color: $black;
@@ -23,7 +36,7 @@
         margin: 0;
     }
     
-    .views-field.views-field-field-datum {
+    .views-field.views-field-field-date {
         display: inline;
         font-weight: bold;
         

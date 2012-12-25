@@ -1,0 +1,33 @@
+@import "base";
+
+#block-views-frontpage-highlight-block {
+    margin: 20px 0 0 0;
+    height: 320px;
+    
+    .highlight {
+        float: left;
+        height: 320px;
+        
+        &.views-row-first {
+            padding-right: 20px;
+        }
+    }
+    
+    .views-field-field-tekst-voor-highlight {
+        font-size: 1.4em;
+        line-height: 1.5em;
+        font-weight: bold;
+        width: 300px;
+        position: absolute;
+        top: 395px;
+        padding: 20px 0px 0 15px;
+        
+        a {
+            color: $black;
+            
+            &:hover {
+                color: $dark-gray;
+            }    
+        }
+    }
+}
