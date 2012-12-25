@@ -100,12 +100,13 @@ li a.active {
         }
     }
     
-    li.menuparent:before {
+    li:before {
         content: "|";
     }
     
-    /* But we don't want the separator before the first item! */
-    li.menu-path-front:before {
+    /* Alleen separators voor de hoofdmenu-items, en niet voor het eerste item. */
+    li.menu-path-front:before,
+    li li:before {
         content: none;
     }
     
