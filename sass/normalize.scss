@@ -451,8 +451,9 @@ img {
   /* vertical-align: bottom; */ /* Suppress the space beneath the baseline */
 
   /* Responsive images */
-  /* @todo Add responsive embedded video. */
-  max-width: 100%;
+  /* Werkt niet in IE8. 
+        Aangezien we geen responsive images nodig hebben (pagina heeft een vaste breedte), halen we de regel weg. */
+  /* max-width: 100%; */ 
   height: auto;
 }
 
