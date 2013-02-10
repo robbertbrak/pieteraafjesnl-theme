@@ -226,6 +226,7 @@ h2 {
 
 h3 {
   @include adjust-font-size-to( $h3-font-size );
+  @include adjust-leading-to( 1, $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
 }
@@ -488,7 +489,7 @@ figure {
  */
 
 form {
-  margin: 0;
+  margin: 0 15px;
 }
 
 /*

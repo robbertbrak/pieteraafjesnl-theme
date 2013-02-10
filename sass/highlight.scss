@@ -14,8 +14,8 @@
     }
     
     .views-field-field-tekst-voor-highlight {
-        font-size: 1.4em;
-        line-height: 1.5em;
+        @include adjust-font-size-to( $h2-font-size );
+        line-height: 1.2em;
         font-weight: bold;
         width: 300px;
         position: absolute;
