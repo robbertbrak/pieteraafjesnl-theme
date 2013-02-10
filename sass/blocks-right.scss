@@ -10,15 +10,21 @@
         right: 20px;
     }
 }
+
 #block-views-nieuws-kort-block {
-    background-color: $white;
+    background-color: $light-gray;
     margin: 15px 0 0 0;
     height: 325px;
 
     .view-footer {
-        float: right;
-        margin: 20px 0 0 0;
+        position: absolute;
+        top: 690px;
+        right: 20px;
     }
+}
+
+.front #block-views-nieuws-kort-block {
+    background-color: $white;
 }
 
 #block-views-agenda-kort-block,
@@ -46,7 +52,8 @@
         }
     }
     
-    .views-field.views-field-title {
+    .views-field.views-field-title,
+    .views-field.views-field-field-kopje {
         display: inline;
         font-weight: bold;
         

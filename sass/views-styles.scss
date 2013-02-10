@@ -46,5 +46,23 @@
 
 .view-nieuws-volledig,
 .view-agenda-volledig {
-    margin: 15px 0 0 15px;
+    .views-row {
+        padding: 0 15px 15px 15px;
+    }
+    
+    a {
+        color: $black;
+        
+        &:hover {
+            color: $dark-gray;
+        }    
+    }
+    
+    h1.kopje {
+        padding-left: 0px;
+        margin-bottom: 1em;
+    }
+    .views-row-odd {
+        background-color: $light-gray;
+    }
 }

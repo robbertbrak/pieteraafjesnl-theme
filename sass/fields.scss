@@ -93,9 +93,16 @@
  * Named fields
  */
 
-.field-name-body {
+.field-name-body,
+.field-name-field-date,
+.field-name-field-uitgebreide-inhoud {
     padding: 0 0 0 15px;
 }
+
+.field-name-field-date {
+    padding-top: 1.4em;
+}
+
 
 .field-name-field-image {
 }

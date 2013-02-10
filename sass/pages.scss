@@ -63,11 +63,11 @@ body {
 }
 
 #site-name { /* The name of the website */
-  margin: 1em 0 0 1em;
+  margin: 0.7em 0 0 2em;
   font-weight: normal;
   font-size: 2.5em;
   line-height: 1.5em;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 
   a {
     color: $black;
@@ -121,12 +121,27 @@ h1.title {
     line-height: 1em;
 }
 
+h1.kopje {
+    line-height: 1em;
+    padding: 1em 0 0 15px;
+    margin: 0;
+}
+
 h2.node-title, /* Title of a piece of content when it is given in a list of content */
 h2.block-title, /* Block title */
 h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+}
+
+.grote_afbeelding {
+    line-height: 0;
+    
+    img {
+        line-height: 0;
+        margin: 0 0 15px 0;
+    }
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
