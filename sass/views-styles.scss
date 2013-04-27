@@ -57,12 +57,17 @@
             color: $dark-gray;
         }    
     }
-    
+
     h1.kopje {
-        padding-left: 0px;
-        margin-bottom: 1em;
+      margin-bottom: 1em;
     }
-    .views-row-odd {
-        background-color: $light-gray;
+    
+    .view-content {
+      h1.kopje {
+          padding-left: 0px;
+      }
+      .views-row-odd {
+          background-color: $light-gray;
+      }
     }
 }
