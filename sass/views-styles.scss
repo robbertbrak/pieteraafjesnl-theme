@@ -63,8 +63,11 @@
     }
     
     .view-content {
-      h1.kopje {
-          padding-left: 0px;
+        .kopje {
+            font-size: $h3-font-size;
+            font-weight: bold;
+            padding: 1em 0 0 0;
+            display: inline-block;
       }
       .views-row-odd {
           background-color: $light-gray;
