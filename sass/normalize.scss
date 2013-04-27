@@ -228,7 +228,7 @@ h3 {
   @include adjust-font-size-to( $h3-font-size );
   @include adjust-leading-to( 1, $h3-font-size );
   @include leader(1, $h3-font-size);
-  @include trailer(1, $h3-font-size);
+  @include trailer(0, $h3-font-size);
 }
 
 h4 {
@@ -304,8 +304,8 @@ mark {
 
 p,
 pre {
-  /* Sets 1 unit of vertical rhythm on the top margin. */
-  margin: rhythm(1) 0 0 0;
+  /* Sets 1 unit of vertical rhythm on the bottom margin. */
+  margin: 0 0 rhythm(1) 0;
 }
 
 /*

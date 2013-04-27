@@ -57,11 +57,11 @@
             color: $dark-gray;
         }    
     }
-
-    h1.kopje {
-      margin-bottom: 1em;
-    }
     
+    p {
+      margin: rhythm(1) 0 0 0;
+    }
+
     .view-content {
         .kopje {
             font-size: $h3-font-size;
