@@ -45,7 +45,75 @@ li a.active {
  */
 
 #navigation {
-  /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
+  font-size: 0;
+
+  div#block-system-main-menu {
+    text-align: center;
+    position: relative;
+
+    ul.menu {
+      a {
+        font-weight: bold; 
+        display: inline-block;
+        color: $black;
+        text-decoration: none;
+        padding: 4px 30px;
+        background-color: white;
+        margin-left: 4px;
+        margin-right: 2px;
+
+        &:hover {
+          color: $white;  
+          background-color: $black;
+        }
+      }
+
+      margin: 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        line-height: 1.5em;
+        font-size: 16px;
+        list-style: none;
+        display: inline;
+        text-align: left;
+
+        // Uitklapmenu (2e niveau)
+        ul {
+          z-index: 5;
+          height: 100%;
+          position: absolute;
+          left: 0;
+
+          li {
+            left: 0;
+            bottom: 0;
+            margin-left: 4px;
+            // Het uitklapmenu is onzichtbaar tot de gebruiker er met de muis overheen gaat.
+            display: none;
+
+            a {
+              width: 12.5em;
+              line-height: 1.5em;
+            }
+          }
+        }
+
+        &:hover ul li {
+          display: block;
+        }
+      }
+    }
+
+    > ul.menu > li:before {
+      content: "|";
+    }
+
+    > ul.menu > li.last:after {
+      content: "|";
+    }
+  }
 
   .block {
     margin-bottom: 0;
@@ -56,19 +124,6 @@ li a.active {
     @include element-invisible();
   }
 
-  ul.links, /* Main menu and secondary menu links */
-  ul.menu { /* Menu block links */
-    margin: 0;
-    padding: 0;
-    text-align: left; /* LTR */
-
-    li { /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
-      list-style-type: none;
-      list-style-image: none;
-    }
-  }
 }
 
 .region-navigation {
@@ -84,64 +139,3 @@ li a.active {
 #secondary-menu {
   float: right; /* LTR */
 }
-
-#navigation {
-    font-size: 16px;
-    
-    a {
-        font-weight: bold; 
-        display: inline-block;
-        color: $black;
-        text-decoration: none;
-
-        &:hover {
-            color: $white;  
-            background-color: $black;
-        }
-    }
-    
-    li:before {
-        content: "|";
-    }
-    
-    /* Alleen separators voor de hoofdmenu-items, en niet voor het eerste item. */
-    li.menu-path-front:before,
-    li li:before {
-        content: none;
-    }
-    
-    li {
-        margin: 0 0 0 5px;  
-        border: 0px;
-        background-color: $white;
-        background: none;
-        
-        a {
-            padding: 4px 30px;
-            margin: 0 0 0 5px;
-        }
-        
-        /* Uitklapmenu */
-        ul {
-            margin: 0 0 0 10px;
-            border-top: 0px;
-            top: auto;
-        }
-        
-        li {
-            margin: 0;
-            padding: 0;
-            background-color: $white;
-            width: auto;
-            
-            a {
-                margin: 0px;
-                padding: 4px 0 4px 30px;
-                width: 12.5em;
-                line-height: 1.5em;
-            }
-        }        
-    }
-}
-
-
