@@ -5,9 +5,7 @@
     height: 340px;
     
     .view-footer {
-        position: absolute;
-        top: 350px;
-        right: 20px;
+        top: 311px;
     }
 }
 
@@ -18,9 +16,7 @@
     height: 325px;
 
     .view-footer {
-        position: absolute;
-        top: 690px;
-        right: 20px;
+        top: 296px;
     }
 }
 
@@ -30,6 +26,11 @@
 
 #block-views-agenda-kort-block,
 #block-views-nieuws-kort-block {
+    // Elementen met absolute positionering worden gepositioneerd ten opzichte van het eerste afwijkend gepositioneerde parent-element.
+    // We geven het agenda- en nieuwsblok relative positioning, zodat
+    // de footers in deze blokken hierin absoluut gepositioneerd kunnen worden.
+    position: relative;
+
     padding: 0 20px;
     
     a {
@@ -66,5 +67,11 @@
     div.views-row {
       margin: rhythm(1) 0 0 0;
     }
+
+    .view-footer {
+        position: absolute;
+        right: 20px;
+    }
+
 }
 
